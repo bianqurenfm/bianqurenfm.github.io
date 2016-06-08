@@ -1,1 +1,91 @@
-Hello World
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+a,a:hover{color:#333;}
+body{background:none repeat scroll 0 0 #E0E0E0;line-height:1.85em;font-weight:300;padding:0;margin:0 auto auto auto;color:#626B69;}body,strong,textarea,select,input[type="text"],input[type="button"],input[type="submit"],input[type="reset"],input[type="file"],pre.s_lrc{font:13px/20px 微软雅黑,arial,helvetica,verdana,tahoma,sans-serif,宋体;}
+/* 通用自定义按钮-默认蓝色 */
+.u-btn{display:inline-block;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;padding:0 12px;height:28px;line-height:28px;border:1px solid #2d88bf;border-radius:5px;font-size:12px;letter-spacing:1px;text-align:center;vertical-align:middle;cursor:pointer;word-wrap:normal;white-space:nowrap;box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);text-shadow:0 -1px rgba(0,0,0,0.2);background:-webkit-gradient(linear,0% 0%,0% 100%,from(#6dbde4),to(#399dd8));background:-webkit-linear-gradient(#6dbde4,#399dd8);background:-moz-linear-gradient(#6dbde4,#399dd8);background:-ms-linear-gradient(#6dbde4,#399dd8);background:linear-gradient(#6dbde4,#399dd8);}
+.u-btn,.u-btn:hover{color:#fff;text-decoration:none;}
+.u-btn:hover,.u-btn:focus{background:#399dd8;}
+.u-btn:active{box-shadow:inset 0 1px 4px rgba(0,0,0,0.2);}
+.u-btn::-moz-focus-inner{padding:0;margin:0;border:0;}
+.u-btn .btnsel{display:inline-block;vertical-align:middle;border-style:solid;border-width:4px 4px 0;border-color:rgba(255,255,255,0.8) transparent transparent;}
+.u-btn:hover .btnsel,.u-btn:focus .btnsel{border-top-color:rgba(255,255,255,1);}
+/* 灰色 */
+.u-btn-c4{border-color:#d0d0d0;text-shadow:0 1px rgba(255,255,255,0.8);background:-webkit-gradient(linear,0% 0%,0% 100%,from(#fefefe),to(#e7e7e7));background:-webkit-linear-gradient(#fefefe,#e7e7e7);background:-moz-linear-gradient(#fefefe,#e7e7e7);background:-ms-linear-gradient(#fefefe,#e7e7e7);background:linear-gradient(#fefefe,#e7e7e7);}
+.u-btn-c4,.u-btn-c4:hover{color:#008000;}
+.u-btn-c4:hover,.u-btn-c4:focus{background:#e7e7e7;}
+.u-btn-c4 .btnsel{border-top-color:rgba(0,0,0,0.6);}
+.u-btn-c4:hover .btnsel,.u-btn-c4:focus .btnsel{border-top-color:rgba(0,0,0,1);}
+/* 通用自定义按钮组合 */
+.u-btns{display:inline-block;position:relative;}
+.u-btns .u-btn{float:left;margin-left:-1px;border-radius:0;}
+.u-btns .u-btn:first-child{margin-left:0;border-radius:5px 0 0 5px;}
+.u-btns .u-btn:nth-last-of-type(1){border-radius:0 5px 5px 0;}
+.u-btns .u-btn:only-of-type{border-radius:5px;}
+.content{
+	margin: 80px auto;
+	width: 900px;
+	text-align:center;
+	background:#fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+	padding:20px;
+}
+h1{
+    font-size: large;
+    margin: 20px;
+    color: #3BB873;
+}
+.downloads{
+	margin: 20px;
+}
+.octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+  
+<div class="content">
+	<div><h1>千千阙歌音乐播放器</h1></div>
+	<div><img src="https://raw.githubusercontent.com/bianqurenfm/bianqurenfm.github.io/master/all.fm.png"></div>
+
+	<div class="downloads">
+	<span class="u-btns">
+	    <a type="button" class="u-btn u-btn-c4" href="https://github.com/bianqurenfm/bianqurenfm.github.io/releases/download/1.0.0/all.fm-win32-ia32.tar.gz"><svg aria-hidden="true" class="octicon octicon-package text-muted" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"></path></svg> 下载 win-32</a>
+	    <a type="button" class="u-btn u-btn-c4" href="https://github.com/bianqurenfm/bianqurenfm.github.io/releases/download/1.0.0/all.fm-win32-x64.tar.gz"><svg aria-hidden="true" class="octicon octicon-package text-muted" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"></path></svg> 下载 win-64</a>
+	    <a type="button" class="u-btn u-btn-c4" href="https://github.com/bianqurenfm/bianqurenfm.github.io/releases/download/1.0.0/all.fm-linux-ia32.tar.gz">下载 linux-32</a>
+	    <a type="button" class="u-btn u-btn-c4" href="https://github.com/bianqurenfm/bianqurenfm.github.io/releases/download/1.0.0/all.fm-linux-x64.tar.gz"><svg aria-hidden="true" class="octicon octicon-package text-muted" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"></path></svg> 下载 linux-64</a>
+		<a type="button" class="u-btn u-btn-c4" href="https://github.com/bianqurenfm/bianqurenfm.github.io/releases/download/1.0.0/all.fm-darwin-x64.tar.gz"><svg aria-hidden="true" class="octicon octicon-package text-muted" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"></path></svg> 下载 darwin-64</a>
+		<a type="button" class="u-btn u-btn-c4" href="https://github.com/bianqurenfm/bianqurenfm.github.io/releases/download/1.0.0/all.fm-mas-x64.tar.gz"><svg aria-hidden="true" class="octicon octicon-package text-muted" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path d="M1 4.27v7.47c0 .45.3.84.75.97l6.5 1.73c.16.05.34.05.5 0l6.5-1.73c.45-.13.75-.52.75-.97V4.27c0-.45-.3-.84-.75-.97l-6.5-1.74a1.4 1.4 0 0 0-.5 0L1.75 3.3c-.45.13-.75.52-.75.97zm7 9.09l-6-1.59V5l6 1.61v6.75zM2 4l2.5-.67L11 5.06l-2.5.67L2 4zm13 7.77l-6 1.59V6.61l2-.55V8.5l2-.53V5.53L15 5v6.77zm-2-7.24L6.5 2.8l2-.53L15 4l-2 .53z"></path></svg> 下载 mas-64</a>
+	</span></div>
+</div>
+	
+</body>
+</html>
